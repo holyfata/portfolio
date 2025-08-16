@@ -8,7 +8,7 @@ const IconGitHub = () => {
       <span
         className="inline-block bg-cover size-[20] mr-1"
         style={{
-          backgroundImage: `url(https://img.icons8.com/?size=100&id=HW77LO6vM3AB&format=png&color=000000)`,
+          backgroundImage: `url(/images/github.gif)`,
         }}
       ></span>
       GitHub

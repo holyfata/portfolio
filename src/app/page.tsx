@@ -12,7 +12,7 @@ export default function Home() {
     <section className="flex flex-col">
       <section className="flex flex-row">
         <section
-          className="pr-4 leading-8 text-gray-500 flex-1 break-words"
+          className="pr-4 leading-8 text-gray-500 flex-1 break-words animate__animated animate__fadeIn"
           style={{ fontFamily: "Chubbo-Regular" }}
         >
           <p style={{ fontFamily: "Comico-Regular" }}>

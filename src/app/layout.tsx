@@ -7,6 +7,7 @@ import linkJSONData from "@/store/links.json";
 import barJSONData from "@/store/bar.json";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import "animate.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

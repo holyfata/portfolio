@@ -14,7 +14,7 @@ export const Skills = () => {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        const skillIcons = data.data.map((skill: { fileName: string }) => `/skill-icons/${skill.fileName}`);
+        const skillIcons = data.data.map((skill: { name: string, iconUrl: string }) => skill.iconUrl);
         setSkills(skillIcons);
       } catch (error) {
         console.error('Failed to fetch skills:', error);

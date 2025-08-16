@@ -19,7 +19,11 @@ const nextConfig: NextConfig = {
       ),
       new URL(
         "https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-      )
+      ),
+      {
+        protocol: "https",
+        hostname: "img.icons8.com"
+      }
     ],
   },
 };

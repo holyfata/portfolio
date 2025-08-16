@@ -96,22 +96,6 @@ export default function Home() {
       <section>
         <h4 className="text-gray-500 pb-4" style={{ fontFamily: 'Comico-Regular' }}>SKILLS:</h4>
         <Skills />
-        {/* <ul className="flex flex-row gap-2 flex-wrap">
-          {skills.map((skill, index) => {
-            return (
-              <li key={index} className="flex items-center justify-center p-2 w-fit shrink-0">
-                <div>
-                  <Image 
-                    src={skill}
-                    alt="Skill Icon"
-                    width={40}
-                    height={40}
-                  />
-                </div>
-              </li>
-              )
-          })}
-        </ul> */}
       </section>
     </section>
   );

@@ -24,3 +24,105 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/**
+* @license
+*
+* Font Family: Telma
+* Designed by: Jitka Janečková
+* URL: https://www.fontshare.com/fonts/telma
+* © 2025 Indian Type Foundry
+*
+* Telma Light 
+* Telma Regular 
+* Telma Medium 
+* Telma Bold 
+* Telma Black 
+* Telma Variable (Variable font)
+
+*
+*/
+@font-face {
+  font-family: 'Telma-Light';
+  src: url('/fonts/Telma_Complete/Telma_Complete/Fonts/WEB/fonts/Telma-Light.woff2') format('woff2'),
+       url('/fonts/Telma_Complete/Telma_Complete/Fonts/WEB/fonts/Telma-Light.woff') format('woff'),
+       url('/fonts/Telma_Complete/Telma_Complete/Fonts/WEB/fonts/Telma-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Telma-Regular';
+  src: url('/fonts/Telma_Complete/Telma_Complete/Fonts/WEB/fonts/Telma-Regular.woff2') format('woff2'),
+       url('/fonts/Telma_Complete/Telma_Complete/Fonts/WEB/fonts/Telma-Regular.woff') format('woff'),
+       url('/fonts/Telma_Complete/Telma_Complete/Fonts/WEB/fonts/Telma-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Telma-Medium';
+  src: url('/fonts/Telma_Complete/Telma_Complete/Fonts/WEB/fonts/Telma-Medium.woff2') format('woff2'),
+       url('/fonts/Telma_Complete/Telma_Complete/Fonts/WEB/fonts/Telma-Medium.woff') format('woff'),
+       url('/fonts/Telma_Complete/Telma_Complete/Fonts/WEB/fonts/Telma-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Telma-Bold';
+  src: url('/fonts/Telma_Complete/Telma_Complete/Fonts/WEB/fonts/Telma-Bold.woff2') format('woff2'),
+       url('/fonts/Telma_Complete/Telma_Complete/Fonts/WEB/fonts/Telma-Bold.woff') format('woff'),
+       url('/fonts/Telma_Complete/Telma_Complete/Fonts/WEB/fonts/Telma-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Telma-Black';
+  src: url('/fonts/Telma_Complete/Telma_Complete/Fonts/WEB/fonts/Telma-Black.woff2') format('woff2'),
+       url('/fonts/Telma_Complete/Telma_Complete/Fonts/WEB/fonts/Telma-Black.woff') format('woff'),
+       url('/fonts/Telma_Complete/Telma_Complete/Fonts/WEB/fonts/Telma-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 900.0;
+*
+* available axes:
+'wght' (range from 300.0 to 900.0
+*/
+@font-face {
+  font-family: 'Telma-Variable';
+  src: url('/fonts/Telma_Complete/Telma_Complete/Fonts/WEB/fonts/Telma-Variable.woff2') format('woff2'),
+       url('/fonts/Telma_Complete/Telma_Complete/Fonts/WEB/fonts/Telma-Variable.woff') format('woff'),
+       url('/fonts/Telma_Complete/Telma_Complete/Fonts/WEB/fonts/Telma-Variable.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+/**
+* @license
+*
+* Font Family: Stardom
+* Designed by: Indian Type Foundry
+* URL: https://www.fontshare.com/fonts/stardom
+* © 2025 Indian Type Foundry
+*
+* Stardom Regular 
+
+*
+*/
+@font-face {
+  font-family: 'Stardom-Regular';
+  src: url('/fonts/Stardom_Complete/Stardom_Complete/Fonts/WEB/fonts/Stardom-Regular.woff2') format('woff2'),
+       url('/fonts/Stardom_Complete/Stardom_Complete/Fonts/WEB/fonts/Stardom-Regular.woff') format('woff'),
+       url('/fonts/Stardom_Complete/Stardom_Complete/Fonts/WEB/fonts/Stardom-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}

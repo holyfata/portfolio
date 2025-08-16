@@ -2,6 +2,10 @@ import Image from "next/image";
 import Skills from "@/components/Skills";
 import HomeSection from "@/components/HomeSection";
 import RencentWork from "@/components/RecentWork";
+import IconNJUPT from "@/components/IconNJUPT";
+import IconJD from "@/components/IconJD";
+import IconOpenSource from "@/components/IconOpenSource";
+import IconGitHub from "@/components/IconGitHub";
 
 export default function Home() {
   return (
@@ -17,33 +21,9 @@ export default function Home() {
           <br />
           <p className="leading-10">
             Graduated from &nbsp;
-            <a
-              className="cursor-pointer hover:underline text-[#007aff]"
-              href="https://www.njupt.edu.cn/"
-              target="_blank"
-            >
-              <span
-                className="inline-block bg-cover size-[20] mr-1"
-                style={{
-                  backgroundImage: `url(https://www.njupt.edu.cn/_upload/tpl/0d/78/3448/template3448/image/favicon.ico)`,
-                }}
-              ></span>
-              NJUPT
-            </a>{" "}
-            &nbsp; with a major in Biomedical Engineering, and entered &nbsp;
-            <a
-              className="cursor-pointer hover:underline text-[#CC0000]"
-              href="https://www.jd.com"
-              target="_blank"
-            >
-              <span
-                className="inline-block bg-cover size-[20] mr-1"
-                style={{
-                  backgroundImage: `url(https://img11.360buyimg.com/img/jfs/t1/275721/2/1900/17609/67d15ec5Fbfdce671/4f23c5ca45c211c7.png)`,
-                }}
-              ></span>
-              JD.COM
-            </a>
+            <IconNJUPT /> &nbsp; with a major in Biomedical Engineering, and
+            entered &nbsp;
+            <IconJD />
             &nbsp; through the 2024 campus recruitment to engage in front-end
             development work.
           </p>{" "}
@@ -51,35 +31,10 @@ export default function Home() {
           <p className="leading-10">
             I love coding and enjoy the feeling of creation. What&apos;s more, I
             embrace &nbsp;
-            <a
-              className="cursor-pointer hover:underline text-[#3Ea638]"
-              href="https://opensource.org/"
-              target="_blank"
-            >
-              <span
-                className="inline-block bg-cover size-[20] mr-1"
-                style={{
-                  backgroundImage: `url(https://th.bing.com/th/id/ODF.89jlCB_iVlzKm_08deitXA?w=32&h=32&qlt=93&pcl=fffffa&o=6&pid=1.2)`,
-                }}
-              ></span>
-              Open Source
-            </a>
+            <IconOpenSource />
             . Apart from work, I spend my office hours slacking off and browsing
             &nbsp;
-            <a
-              className="cursor-pointer hover:underline text-[#1f2328]"
-              href="https://github.com/"
-              target="_blank"
-            >
-              <span
-                className="inline-block bg-cover size-[20] mr-1"
-                style={{
-                  backgroundImage: `url(https://img.icons8.com/?size=100&id=HW77LO6vM3AB&format=png&color=000000)`,
-                }}
-              ></span>
-              GitHub
-            </a>{" "}
-            &nbsp; every day.
+            <IconGitHub /> &nbsp; every day.
           </p>
         </section>
         <section className="flex flex-col shrink-0 w-[240]">

@@ -43,62 +43,6 @@ export default function Home() {
             </Link>
           </li>
         </ul>
-        {/* <ul className="flex gap-2 ml-8">
-          <li>
-            <Image
-              aria-hidden
-              src="/icons/github.svg"
-              alt="WeChat icon"
-              width={20}
-              height={20}
-            />
-          </li>
-          <li>
-            <Image
-              aria-hidden
-              src="/icons/lark.svg"
-              alt="WeChat icon"
-              width={20}
-              height={20}
-            />
-          </li>
-          <li>
-            <Image
-              aria-hidden
-              src="/icons/twitter.svg"
-              alt="WeChat icon"
-              width={20}
-              height={20}
-            />
-          </li>
-          <li>
-            <Image
-              aria-hidden
-              src="/icons/tiktok.svg"
-              alt="WeChat icon"
-              width={20}
-              height={20}
-            />
-          </li>
-          <li>
-            <Image
-              aria-hidden
-              src="/icons/qq.svg"
-              alt="WeChat icon"
-              width={20}
-              height={20}
-            />
-          </li>
-          <li>
-            <Image
-              aria-hidden
-              src="/icons/wechat.svg"
-              alt="WeChat icon"
-              width={20}
-              height={20}
-            />
-          </li>
-        </ul> */}
       </header>
       <main className="flex flex-col pt-10 flex-1 px-4">
         <section className="flex flex-row">

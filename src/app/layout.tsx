@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
+import linkJSONData from "@/store/links.json"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -60,28 +61,22 @@ export default function RootLayout({
               </li>
               <li className="cursor-pointer flex items-center justify-center">
                 <ul className="flex items-center gap-2">
-                  <li className="cursor-pointer flex items-center justify-center">
-                    <Link href="https://github.com/holyfata" target="_blank">                    
-                      <Image
-                        aria-hidden
-                        src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000"
-                        alt="Github"
-                        width={20}
-                        height={20}
-                      />
-                    </Link>
-                  </li>
-                  <li className="cursor-pointer flex items-center justify-center">
-                    <Link href="https://x.com/holyfata814" target="_blank">                    
-                      <Image
-                        aria-hidden
-                        src="https://img.icons8.com/?size=100&id=A4DsujzAX4rw&format=png&color=000000"
-                        alt="X"
-                        width={20}
-                        height={20}
-                      />
-                    </Link>
-                  </li>
+                  {linkJSONData.map((link, index) => {
+                    const { name, iconUrl, jumpUrl } = link;
+                    return (
+                      <li key={index} className="cursor-pointer flex items-center justify-center">
+                        <Link href={jumpUrl} target="_blank">                    
+                          <Image
+                            aria-hidden
+                            src={iconUrl}
+                            alt={name}
+                            width={20}
+                            height={20}
+                          />
+                        </Link>
+                      </li>
+                    )
+                  })}
                 </ul>
               </li>
             </ul>

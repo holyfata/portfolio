@@ -1,29 +1,11 @@
-"use client";
-import { useEffect, useState } from "react";
 import Image from "next/image";
+import skillsJSONData from "@/store/skills.json";
 
 const Skills = () => {
-  const [skills, setSkills] = useState<string[]>([]);
 
-  useEffect(() => {
-    const fetchSkills = async () => {
-      try {
-        const response = await fetch("/api/skills");
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        const data = await response.json();
-        const skillIcons = data.data.map(
-          (skill: { name: string; iconUrl: string }) => skill.iconUrl,
-        );
-        setSkills(skillIcons);
-      } catch (error) {
-        console.error("Failed to fetch skills:", error);
-      }
-    };
-
-    fetchSkills();
-  }, []);
+  const skills = skillsJSONData.map((skill) => {
+    return skill.iconUrl;
+  });
 
   return (
     <ul className="flex flex-row gap-2 flex-wrap">

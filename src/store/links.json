@@ -1,0 +1,17 @@
+[
+    {
+       "name": "github",
+       "iconUrl": "https://img.icons8.com/?size=100&id=12599&format=png&color=000000",
+       "jumpUrl": "https://github.com/holyfata"
+    },
+    {
+       "name": "x",
+       "iconUrl": "https://img.icons8.com/?size=100&id=A4DsujzAX4rw&format=png&color=000000",
+       "jumpUrl": "https://x.com/holyfata814"
+    },
+    {
+       "name": "bilibili",
+       "iconUrl": "https://img.icons8.com/?size=100&id=hRNQ1UM15jGN&format=png&color=000000",
+       "jumpUrl": "https://space.bilibili.com/3493273159075938"
+    }
+]

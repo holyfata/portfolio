@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,11 +25,60 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-full">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-full`}
       >
-        {children}
+        <div className="font-sans w-4xl mx-auto flex flex-col text-xl h-full">
+          <header className="flex h-16 justify-center items-center border-b border-gray-200 px-4 shrink-0">
+            <h1
+              className="text-2xl font-semibold mr-10 cursor-pointer"
+              style={{ fontFamily: "Stardom-Regular" }}
+            >
+              <Link href="/">HolyFata</Link>
+            </h1>
+            <ul className="flex-1 grid grid-cols-6 justify-items-center">
+              <li className="cursor-pointer">
+                <Link href="/blog" className="hover:underline">
+                  Blog
+                </Link>
+              </li>
+              <li className="cursor-pointer">
+                <Link href="/work" className="hover:underline">
+                  Work
+                </Link>
+              </li>
+              <li className="cursor-pointer">
+                <Link href="/video" className="hover:underline">
+                  Video
+                </Link>
+              </li>
+              <li className="cursor-pointer">
+                <Link href="/probe" className="hover:underline">
+                  Probe
+                </Link>
+              </li>
+              <li className="cursor-pointer">
+                <Link href="/about" className="hover:underline">
+                  About
+                </Link>
+              </li>
+              <li className="cursor-pointer">
+                <Link href="/" className="hover:underline">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </header>
+          <main className="flex flex-col pt-10 flex-1 px-4">
+            {children}
+          </main>
+          <footer className="flex h-16 justify-center items-center border-t border-gray-200 px-4">
+            <p className="text-sm text-gray-500">
+              Made with ❤️ using Next.js and Tailwind CSS.
+            </p>
+          </footer>
+        </div>
       </body>
     </html>
   );

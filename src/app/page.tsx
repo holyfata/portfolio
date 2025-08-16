@@ -1,6 +1,25 @@
 import Image from "next/image";
 
 export default function Home() {
+
+  const skills = [
+    "/icons/html.png",
+    "/icons/css3.png",
+    "/icons/typescript.svg",
+    "/icons/react.png",
+    "/icons/vue.svg",
+    "/icons/vite.png",
+    "/icons/webpack.png",
+    "/icons/nginx.png",
+    "/icons/docker.png",
+    "/icons/rust.png",
+    "/icons/java.gif",
+    "/icons/c.svg",
+    "/icons/python.png",
+    "/icons/blender.png",
+    "/icons/android.png"
+  ]
+
   return (
     <section className="flex flex-col">
       <section className="flex flex-row">
@@ -57,7 +76,7 @@ export default function Home() {
         <div className="border-b border-gray-200"></div>
       </div>
       <section>
-        <h4 className="text-gray-500 pb-4">Recently Working on: </h4>
+        <h4 className="text-gray-500 pb-4" style={{ fontFamily: 'Comico-Regular' }}>Recently Working on: </h4>
         <ul className="grid grid-cols-2 gap-2">
           <li className="flex items-center border border-gray-200 rounded-lg py-4 px-6">
             <Image 
@@ -86,6 +105,28 @@ export default function Home() {
             />
             <p className="text-gray-400 text-base ml-4">The Linter for TypeScript By Go</p>
           </li>
+        </ul>
+      </section>
+      <div className="pt-8 pb-4">
+        <div className="border-b border-gray-200"></div>
+      </div>
+      <section>
+        <h4 className="text-gray-500 pb-4" style={{ fontFamily: 'Comico-Regular' }}>SKILLS:</h4>
+        <ul className="flex flex-row gap-2 flex-wrap">
+          {skills.map((skill, index) => {
+            return (
+              <li key={index} className="flex items-center justify-center p-2 w-fit shrink-0">
+                <div>
+                  <Image 
+                    src={skill}
+                    alt="Skill Icon"
+                    width={40}
+                    height={40}
+                  />
+                </div>
+              </li>
+              )
+          })}
         </ul>
       </section>
     </section>

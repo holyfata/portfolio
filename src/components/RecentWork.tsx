@@ -19,7 +19,7 @@ const RencentWork = () => {
               className="flex items-center w-full"
             >
               <Image src={logoUrl} width={120} height={60} alt={name} />
-              <p className="text-gray-400 flex-1 text-base ml-4 flex flex-row-reverse">
+              <p className="text-gray-400 flex-1 text-base ml-4 flex flex-row-reverse break-all">
                 {description}
               </p>
             </Link>

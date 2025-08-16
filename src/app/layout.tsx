@@ -37,7 +37,7 @@ export default function RootLayout({
             >
               <Link href="/">HolyFata</Link>
             </h1>
-            <ul className="flex-1 grid grid-cols-6 justify-items-center">
+            <ul className="flex-1 grid grid-cols-5 justify-items-center">
               <li className="cursor-pointer">
                 <Link href="/blog" className="hover:underline">
                   Blog
@@ -49,8 +49,8 @@ export default function RootLayout({
                 </Link>
               </li>
               <li className="cursor-pointer">
-                <Link href="/video" className="hover:underline">
-                  Video
+                <Link href="/life" className="hover:underline">
+                  Life
                 </Link>
               </li>
               <li className="cursor-pointer">
@@ -58,20 +58,36 @@ export default function RootLayout({
                   Probe
                 </Link>
               </li>
-              <li className="cursor-pointer">
-                <Link href="/about" className="hover:underline">
-                  About
-                </Link>
-              </li>
-              <li className="cursor-pointer">
-                <Link href="/" className="hover:underline">
-                  Contact
-                </Link>
+              <li className="cursor-pointer flex items-center justify-center">
+                <ul className="flex items-center gap-2">
+                  <li className="cursor-pointer flex items-center justify-center">
+                    <Link href="https://github.com/holyfata" target="_blank">                    
+                      <Image
+                        aria-hidden
+                        src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000"
+                        alt="Github"
+                        width={20}
+                        height={20}
+                      />
+                    </Link>
+                  </li>
+                  <li className="cursor-pointer flex items-center justify-center">
+                    <Link href="https://x.com/holyfata814" target="_blank">                    
+                      <Image
+                        aria-hidden
+                        src="https://img.icons8.com/?size=100&id=A4DsujzAX4rw&format=png&color=000000"
+                        alt="X"
+                        width={20}
+                        height={20}
+                      />
+                    </Link>
+                  </li>
+                </ul>
               </li>
             </ul>
           </header>
           <main className="flex flex-col pt-10 flex-1 px-4">{children}</main>
-          <footer className="flex h-16 justify-center items-center border-t border-gray-200 px-4">
+          <footer className="flex h-16 justify-center items-center border-t border-gray-200 px-4 py-4">
             <p className="text-sm text-gray-500">
               Made with ❤️ using Next.js and Tailwind CSS.
             </p>

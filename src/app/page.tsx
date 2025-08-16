@@ -94,7 +94,7 @@ export default function Home() {
               &nbsp;<a className="cursor-pointer hover:underline text-[#CC0000]" href="https://www.jd.com">JD.COM</a>&nbsp; 
               through the 2024 campus recruitment to engage in front-end development work.
             </p> <br />
-            <p className="leading-10">I love coding and enjoy the feeling of creation. What's more, I embrace open source. Apart from work, I spend my office hours slacking off and browsing GitHub every day.</p>
+            <p className="leading-10">I love coding and enjoy the feeling of creation. What&apos;s more, I embrace open source. Apart from work, I spend my office hours slacking off and browsing GitHub every day.</p>
           </section>
           <section className="flex flex-col shrink-0 w-[240]">
             <Image
@@ -113,6 +113,11 @@ export default function Home() {
           </section>
         </section>
       </main>
+      <footer className="flex h-16 justify-center items-center border-t border-gray-200 px-4">
+        <p className="text-sm text-gray-500">
+          Made with ❤️ using Next.js and Tailwind CSS.
+        </p>
+      </footer>
     </div>
   );
 }

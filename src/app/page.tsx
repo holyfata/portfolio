@@ -55,11 +55,11 @@ export default function Home() {
         </section>
       </section>
 
-      <HomeSection title="Recently Working on:">
+      <HomeSection title="Recently Work:">
         <RencentWork />
       </HomeSection>
 
-      <HomeSection title="Skills:">
+      <HomeSection title="Skills Depend:">
         <Skills />
       </HomeSection>
     </section>

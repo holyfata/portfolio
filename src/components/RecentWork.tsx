@@ -2,7 +2,7 @@ import Image from "next/image";
 import WorkJSONData from "@/store/work.json";
 
 const RencentWork = () => {
-  const work = WorkJSONData
+  const work = WorkJSONData;
   return (
     <ul className="grid grid-cols-2 gap-2">
       {work.map((item, index) => {

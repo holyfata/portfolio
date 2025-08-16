@@ -2,7 +2,6 @@ import Image from "next/image";
 import skillsJSONData from "@/store/skills.json";
 
 const Skills = () => {
-
   const skills = skillsJSONData.map((skill) => {
     return skill.iconUrl;
   });

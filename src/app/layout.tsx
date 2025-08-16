@@ -3,7 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
-import linkJSONData from "@/store/links.json"
+import linkJSONData from "@/store/links.json";
+import barJSONData from "@/store/bar.json";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,48 +39,41 @@ export default function RootLayout({
             >
               <Link href="/">HolyFata</Link>
             </h1>
-            <ul className="flex-1 grid grid-cols-5 justify-items-center">
-              <li className="cursor-pointer">
-                <Link href="/blog" className="hover:underline">
-                  Blog
-                </Link>
-              </li>
-              <li className="cursor-pointer">
-                <Link href="/work" className="hover:underline">
-                  Work
-                </Link>
-              </li>
-              <li className="cursor-pointer">
-                <Link href="/life" className="hover:underline">
-                  Life
-                </Link>
-              </li>
-              <li className="cursor-pointer">
-                <Link href="/probe" className="hover:underline">
-                  Probe
-                </Link>
-              </li>
-              <li className="cursor-pointer flex items-center justify-center">
-                <ul className="flex items-center gap-2">
-                  {linkJSONData.map((link, index) => {
-                    const { name, iconUrl, jumpUrl } = link;
-                    return (
-                      <li key={index} className="cursor-pointer flex items-center justify-center">
-                        <Link href={jumpUrl} target="_blank">                    
-                          <Image
-                            aria-hidden
-                            src={iconUrl}
-                            alt={name}
-                            width={20}
-                            height={20}
-                          />
-                        </Link>
-                      </li>
-                    )
-                  })}
-                </ul>
-              </li>
+            <ul className="flex-1 grid grid-cols-4 justify-items-center">
+              {barJSONData.map((item, index) => {
+                const { name, path } = item;
+                return (
+                  <li key={index} className="cursor-pointer">
+                    <Link href={path} className="hover:underline">
+                      {name}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
+            <div className="flex items-center justify-center">
+              <ul className="flex items-center gap-2">
+                {linkJSONData.map((link, index) => {
+                  const { name, iconUrl, jumpUrl } = link;
+                  return (
+                    <li
+                      key={index}
+                      className="cursor-pointer flex items-center justify-center"
+                    >
+                      <Link href={jumpUrl} target="_blank">
+                        <Image
+                          aria-hidden
+                          src={iconUrl}
+                          alt={name}
+                          width={20}
+                          height={20}
+                        />
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </header>
           <main className="flex flex-col pt-10 flex-1 px-4">{children}</main>
           <footer className="flex h-16 justify-center items-center border-t border-gray-200 px-4 py-4">

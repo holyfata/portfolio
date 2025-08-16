@@ -39,18 +39,20 @@ export default function RootLayout({
             >
               <Link href="/">HolyFata</Link>
             </h1>
-            <ul className="flex-1 grid grid-cols-4 justify-items-center">
-              {barJSONData.map((item, index) => {
-                const { name, path } = item;
-                return (
-                  <li key={index} className="cursor-pointer">
-                    <Link href={path} className="hover:underline">
-                      {name}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
+            <div className="flex-1 flex items-center flex-row-reverse pr-4">
+              <ul className="grid grid-cols-4 justify-items-center">
+                {barJSONData.map((item, index) => {
+                  const { name, path } = item;
+                  return (
+                    <li key={index} className="cursor-pointer px-4">
+                      <Link href={path} className="hover:underline">
+                        {name}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
             <div className="flex items-center justify-center">
               <ul className="flex items-center gap-2">
                 {linkJSONData.map((link, index) => {

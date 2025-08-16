@@ -70,9 +70,7 @@ export default function RootLayout({
               </li>
             </ul>
           </header>
-          <main className="flex flex-col pt-10 flex-1 px-4">
-            {children}
-          </main>
+          <main className="flex flex-col pt-10 flex-1 px-4">{children}</main>
           <footer className="flex h-16 justify-center items-center border-t border-gray-200 px-4">
             <p className="text-sm text-gray-500">
               Made with ❤️ using Next.js and Tailwind CSS.

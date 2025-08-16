@@ -1,24 +1,7 @@
 import Image from "next/image";
+import { Skills } from "@/components/Skills";
 
 export default function Home() {
-
-  const skills = [
-    "/icons/html.png",
-    "/icons/css3.png",
-    "/icons/typescript.svg",
-    "/icons/react.png",
-    "/icons/vue.svg",
-    "/icons/vite.png",
-    "/icons/webpack.png",
-    "/icons/nginx.png",
-    "/icons/docker.png",
-    "/icons/rust.png",
-    "/icons/java.gif",
-    "/icons/c.svg",
-    "/icons/python.png",
-    "/icons/blender.png",
-    "/icons/android.png"
-  ]
 
   return (
     <section className="flex flex-col">
@@ -112,7 +95,8 @@ export default function Home() {
       </div>
       <section>
         <h4 className="text-gray-500 pb-4" style={{ fontFamily: 'Comico-Regular' }}>SKILLS:</h4>
-        <ul className="flex flex-row gap-2 flex-wrap">
+        <Skills />
+        {/* <ul className="flex flex-row gap-2 flex-wrap">
           {skills.map((skill, index) => {
             return (
               <li key={index} className="flex items-center justify-center p-2 w-fit shrink-0">
@@ -127,7 +111,7 @@ export default function Home() {
               </li>
               )
           })}
-        </ul>
+        </ul> */}
       </section>
     </section>
   );

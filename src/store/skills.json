@@ -1,19 +1,23 @@
 [
   {
     "name": "html",
-    "iconUrl": "https://img.icons8.com/?size=100&id=20909&format=png&color=000000"
+    "iconUrl": "https://img.icons8.com/?size=100&id=v8RpPQUwv0N8&format=png&color=000000"
   },
   {
     "name": "css",
-    "iconUrl": "https://img.icons8.com/?size=100&id=4d9YPiN04osD&format=png&color=000000"
+    "iconUrl": "https://img.icons8.com/?size=100&id=7gdY5qNXaKC0&format=png&color=000000"
   },
   {
     "name": "javascript",
-    "iconUrl": "https://img.icons8.com/?size=100&id=tGvHBPJaKqEd&format=png&color=000000"
+    "iconUrl": "https://img.icons8.com/?size=100&id=PXTY4q2Sq2lG&format=png&color=000000"
+  },
+  {
+    "name": "npm",
+    "iconUrl": "https://img.icons8.com/?size=100&id=b6eVatKY9ihI&format=png&color=000000"
   },
   {
     "name": "typescript",
-    "iconUrl": "https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000"
+    "iconUrl": "https://img.icons8.com/?size=100&id=wpZmKzk11AzJ&format=png&color=000000"
   },
   {
     "name": "vue",
@@ -24,19 +28,75 @@
     "iconUrl": "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000"
   },
   {
-    "name": "nginx",
-    "iconUrl": "https://img.icons8.com/?size=100&id=f8puwbhs0kUR&format=png&color=000000"
+    "name": "redux",
+    "iconUrl": "https://img.icons8.com/?size=100&id=b6vIINYN0kfW&format=png&color=000000"
   },
   {
-    "name": "network",
-    "iconUrl": "https://img.icons8.com/?size=100&id=103413&format=png&color=000000"
+    "name": "scss",
+    "iconUrl": "https://img.icons8.com/?size=100&id=78Fr72VCwbPq&format=png&color=000000"
   },
   {
-    "name": "chrome",
-    "iconUrl": "https://img.icons8.com/?size=100&id=PfmQUI56Ji0D&format=png&color=000000"
+    "name": "tailwindcss",
+    "iconUrl": "https://img.icons8.com/?size=100&id=x7XMNGh2vdqA&format=png&color=000000"
+  },
+  {
+    "name": "storybook",
+    "iconUrl": "https://img.icons8.com/?size=100&id=5YDtlBFCcJag&format=png&color=000000"
+  },
+  {
+    "name": "jest",
+    "iconUrl": "https://img.icons8.com/?size=100&id=bp24DwGXJDyT&format=png&color=000000"
+  },
+  {
+    "name": "webpack",
+    "iconUrl": "https://img.icons8.com/?size=100&id=QjbHx7WUskg1&format=png&color=000000"
+  },
+  {
+    "name": "vite",
+    "iconUrl": "https://img.icons8.com/?size=100&id=dJjTWMogzFzg&format=png&color=000000"
+  },
+  {
+    "name": "nextjs",
+    "iconUrl": "https://img.icons8.com/?size=100&id=MWiBjkuHeMVq&format=png&color=000000"
   },
   {
     "name": "nodejs",
     "iconUrl": "https://img.icons8.com/?size=100&id=54087&format=png&color=000000"
+  },
+  {
+    "name": "express",
+    "iconUrl": "https://img.icons8.com/?size=100&id=PZQVBAxaueDJ&format=png&color=000000"
+  },
+  {
+    "name": "mysql",
+    "iconUrl": "https://img.icons8.com/?size=100&id=rgPSE6nAB766&format=png&color=000000"
+  },
+  {
+    "name": "redis",
+    "iconUrl": "https://img.icons8.com/?size=100&id=RMtSR4z10z2l&format=png&color=000000"
+  },
+  {
+    "name": "nginx",
+    "iconUrl": "https://img.icons8.com/?size=100&id=f8puwbhs0kUR&format=png&color=000000"
+  },
+  {
+    "name": "docker",
+    "iconUrl": "https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000"
+  },
+  {
+    "name": "git",
+    "iconUrl": "https://img.icons8.com/?size=100&id=20906&format=png&color=000000"
+  },
+  {
+    "name": "rust",
+    "iconUrl": "https://img.icons8.com/?size=100&id=meGB5Ip7aLFG&format=png&color=000000"
+  },
+  {
+    "name": "python",
+    "iconUrl": "https://img.icons8.com/?size=100&id=13441&format=png&color=000000"
+  },
+  {
+    "name": "cpp",
+    "iconUrl": "https://img.icons8.com/?size=100&id=40669&format=png&color=000000"
   }
 ]
